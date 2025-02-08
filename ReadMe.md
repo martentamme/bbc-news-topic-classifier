@@ -25,7 +25,7 @@ Training the model involves creating a JSON file that includes:
 These parameters allow us to calculate the probability of an article belonging to a given topic. The topic with the highest probability is the predicted category.
 
 ### Bayes Word Probability Formula:
-$P(\text{word} | \text{class}) = \frac{\text{count(word, class)} \, + \, 1}{total words in class \, + \, unique words in all classes}$
+$P(\text{word} | \text{class}) = \frac{\text{count(word, class)} \ + \ 1}{total words in class \ + \ unique words in all classes}$
 
 
 ## Testing the Model
@@ -36,7 +36,7 @@ $P(\text{class}) = \log\left( \frac{\text{total texts in class}}{\text{total tex
 
 Where:
 - $\log P(\text{word}_i | \text{class})$ is used if the word appears in the topic.
-- $\log(\frac{1}{\text{total words in class} \, + \, \text{total unique words}})$ is used if the word does not appear in the topic.
+- $\log(\frac{1}{\text{total words in class} \ + \ \text{total unique words}})$ is used if the word does not appear in the topic.
 
 ## Results
 The trained model achieved **97% accuracy** in predicting the topic of BBC news articles.
